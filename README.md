@@ -11,6 +11,7 @@ https://...
 
 ## 구조
 
+```
 portfolio_Js
 ├── assets
 │   └── css
@@ -24,5 +25,5 @@ portfolio_Js
 │       ├── main.js :  메인 페이지 스크립트
 │       ├── common.js :  공통 스크립트
 ├── index.html : 메인 페이지 레이아웃
-
+```
  
