@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+.gradient__ani__text {background: linear-gradient(to right, var(--green), var(--blue) ,var(--green), var(--blue), var(--green), var(--blue)); color: transparent; -webkit-background-clip: text; background-size: 500%; animation: bgGradient 20s linear infinite;}
+@keyframes bgGradient {
+    0% {background-position: 0% 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0% 50%}
+}
+@-webkit-keyframes bgGradient {
+    0% {background-position: 0% 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0% 50%}
+}
+
+/* visual */
+.visual {display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100vh; text-align: center; letter-spacing: -1px;}
+.visual .visual__main__text {font-size: 14rem; font-weight: 400; line-height: 1.2; z-index: 10;}
+.visual .visual__main__text p {overflow: hidden;}
+.visual .visual__video {overflow: hidden; position: absolute;left: 50%;top: 50%; width: 100%; height: 100vh; min-width: 100%;min-height: 100%; aspect-ratio: 16 / 9;transform: translate(-50%, -50%);}
+.visual .visual__video:after {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.9);}
+
+/* about */
+.about {padding-top: 15rem; color:var(--colorW); background-color:var(--colorB);}
+.about .about__text__01 {width: 50%; margin: 0 auto 25rem;}
+.about .about__text__02,
+.about .about__text__03 {display: flex; align-items: center; justify-content: space-between; width: 70%; margin: 0 auto 10rem;}
+.about .about__lottie {width: 40%;}
+.about .about__text__title {font-size: 10rem;}
+.about .about__text h4 {font-size: 3.5rem; font-weight: 600;}
+.about__text p {margin-top: 3rem; font-size: 2.5rem; font-weight: 200;}
+.about__tag {width: 100%; height: 100%; font-size: 7.5rem; color: #666;}
+.about__tag__track {white-space: nowrap;will-change: transform; animation: textLoop 30s linear infinite; }
+@keyframes textLoop {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+@-webkit-keyframes textLoop {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* work */
+.work {padding: 18rem 0;}
+.work h3 {width: 70%; margin: 0 auto; text-align: right; font-size: 13rem;}
+.myWork__list {display: flex; width: 70%; margin: 0 auto; flex-wrap: wrap; justify-content: space-between;}
+.myWork__list li {width: 45%;margin-top: 20rem;}
+.myWork__list li:nth-child(2n) {margin-top: 0;}
+/* .myWork__list li a {position: absolute; left: 0; top: 0; width: 100%; height: 100%; text-indent: -9999px; z-index: 100;} */
+.myWork__list__text h4 {margin: 2rm 0 5rem; color: #fff; font-size: 3.5rem; font-weight: normal;}
+.myWork__list__text .info {display: flex; justify-content: space-between; color: #888; font-size: 1.6rem;}
+.myWork__list li .myWork__list__img {position: relative; transition: .3s;}
+.myWork__list li .myWork__list__btn {opacity: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10; transition: .3s;}
+.myWork__list li .myWork__list__btn a { padding: 0 .5em; font-size: 2.5rem;}
+.myWork__list li:hover .myWork__list__img img {filter:brightness(50%);}
+.myWork__list li:hover .myWork__list__btn {opacity: 1;}
+
+
+
+/* skill */
+.skill {width: 100%; padding: 18rem 0; overflow: hidden;}
+.skill h3 {width: 70%; margin: 0 auto 5rem; font-size: 8rem; font-weight: 600; line-height: 1.1em;}
+.skill__wrap {width: 70%; margin: 0 auto;}
+.skill__list {display: flex; flex-wrap: wrap; gap:3rem; width: 7000px;}
+.skill__list .skill__item { width: 300px; height: 400px; padding: 3.5rem 2.5rem; color: var(--white); box-sizing: border-box; line-height: 1.2; background-color: var(--green); border-radius: 20px;}
+.skill__list .skill__item:nth-child(2n) {background-color: var(--blue);}
+.skill__list .skill__item__name {font-size: 2.5rem; font-weight: 800; text-transform: uppercase;}
+.skill__list .skill__item__percent {font-size: 8rem; font-weight: 800; color: rgba(255,255,255,.5);}
+.skill__list .skill__item__text {margin: .3rem 0; font-size: 2rem; line-height: 1.4em; opacity: .8;}
+
+.skill__list .skill__item:hover {background-color: #fff;}
+.skill__list .skill__item:hover .skill__item__name,
+.skill__list .skill__item:hover .skill__item__text {color: var(--black);}
+.skill__list .skill__item:nth-child(2n):hover .skill__item__name,
+.skill__list .skill__item:nth-child(2n):hover .skill__item__text {color: var(--blue);}
+.skill__list .skill__item:hover .skill__item__percent {color: rgba(0,0,0,.15);}
+.skill__list .skill__item:nth-child(2n):hover .skill__item__percent {color: var(--blue); opacity: .3;}
+
+
+/*  1300 ~ 1026 */
+@media screen and (max-width: 1300px) {
+    /* visual */
+    .visual .visual__main__text {width: 100%; font-size: 11vw;}
+    /* about */
+    .about .about__text__01 {width: 80%;}
+    .about .about__text__02,
+    .about .about__text__03 {width: 90%;}
+    /* Work */
+        .myWork__list {width: 90%;}
+}
+
+/*  1300 ~ 1026 */
+@media screen and (max-width: 1024px) {
+
+    .myWork__list li .myWork__list__btn a { font-size: 2rem;}
+
+}
+
+
+/*  820 ~ 501 */
+@media screen and (max-width: 820px) {
+    /* visual */
+    .visual .visual__main__text {font-size: 13vw; line-height: 1.3em;}
+
+    /* about */
+    .about .about__text__title {font-size: 13vw;}
+    .about .about__text h4 {font-size: clamp(1.3rem, 4vw, 3rem);}
+    .about__text p {margin-top: 3.5vw; font-size: clamp(.9rem, 3vw, 2rem);}
+    .about .about__text__01 {margin: 0 auto 20vw;}
+    .about .about__text__02, .about 
+    .about__text__03 {display: block; margin: 0 auto 10vw;}
+    .about .about__text__02, 
+    .about .about__text__03 div { margin-bottom: 6vw;}
+    .about .about__lottie {width: 100%;}
+    .about__tag {font-size: 12vw;}
+
+    /* work */
+    .work {padding: 30vw 0;}
+    .work h3 {width: 90%; text-align: right; font-size: 13vw;}
+    .myWork__list {display:  block; width: 90%;}
+    .myWork__list li {width: 100%; margin-top: 8vw;}
+    .myWork__list li:nth-child(2n) {margin-top: 8vw;}
+    .myWork__list__text h4 { margin: 4vw 0 1vw; font-size: 6vw;}
+    .myWork__list__text .info {font-size: 3vw;}
+    .myWork__list li .myWork__list__btn a { padding: 0 2vw; font-size: 5.5vw;}
+
+    /* skill */
+    .skill {width: 100%; height: 100vh; padding: 20vw 0;}
+    .skill h3 {width: 90%; margin: 0 auto 5rem; font-size: 9vw; font-weight: 700;}
+    .skill__wrap {width: 80%;}
+    .skill__list {gap:5vw;width: 5000px;}
+    .skill__list .skill__item {width: 300px; height: 400px; padding: 5vw 3.5vw;}
+    .skill__list .skill__item__name {font-size: clamp(1.5rem, 3.5vw, 3rem);}
+    .skill__list .skill__item__percent {font-size: clamp(4rem, 9vw, 7rem);}
+    .skill__list .skill__item__text {margin: 2vw 0; font-size: clamp(1.3rem, 3vw, 2rem);}
+}
+
+

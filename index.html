@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Julia - web Publisher Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="웹퍼블리셔 이주영 포트폴리오">
+    <meta property="og:site_name" content="웹퍼블리셔 이주영">
+    <meta property="og:description" content="인터렉티브 웹, 트렌디한 UXUI 구현 가능 웹 퍼블리셔 이주영입니다.">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/8c14df786f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#visual">상단 영역 바로가기</a>
+        <a href="#about">소개 영역 바로가기</a>
+        <a href="#work">포트폴리오 영역 바로가기</a>
+        <a href="#skill">스킬 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <h1 class="header__logo"><a href="/"><span>julia</span> Portfolio</a></h1>
+            <nav class="header__nav" aria-label="메인 메뉴">
+                <ul>
+                    <li><a href="#visual">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="header__nav__mo">
+                <span></span>
+            </button>
+    </header>
+    <!-- //header -->
+
+    <main>
+        <section id="visual" class="visual">
+            <h2 class="hidden">메인 비쥬얼 영역</h2>
+            <div class="visual__main__text">
+                <p><span>Web Publisher</span></p>
+                <p class="cormorant"><span>JUYOUNG LEE</span></p>
+                <p><span>Portfolio</span></p>
+            </div>
+            <div class="visual__video">
+                <video preload="auto" muted autoplay loop playsinline>
+                    <source src="/assets/images/visual_video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <!-- //visual -->
+
+        <section id="about" class="about">
+            <h2 class="hidden">소개 영역</h2>
+            <div class="about__inner">
+                <div class="about__text about__text__01 fade_action fade_top">
+                    <h3 class="about__text__title gradient__ani__text">
+                        Be <span class="cormorant">FLEXIBLE.</span>
+                    </h3>
+                    <h4>흥미로운 것은 오래 기억됩니다.<br>사용자의 관점에서 생각하고, 기억에 남는 웹을 만드는 것이 목표입니다.</h4>
+                    <p>
+                        디자인 전공으로 UX/UI에 대한 이해와 관심을 가지고 있습니다.<br>
+                        인터렉티브 웹 구현이 가능하며, 이에 대해 꾸준히 스터디하고 있습니다.
+                    </p>
+                </div>
+                <div class="about__text about__text__02">
+                    <div class="fade_action fade_left">
+                        <h4>크로스브라우징, 웹접근성에 맞는<br>웹 구현이 가능합니다.</h4>
+                        <p>
+                            웹 표준 / 접근성 준수,<br>SEO 최적화를 위한 시멘틱 마크업을 지향합니다.<br>
+                        </p>
+                    </div>
+                    
+                    <lottie-player class="about__lottie fade_action fade_right"
+                    src="/assets/images/about_ani_02.json"
+                    background="transparent" speed="1" loop autoplay></lottie-player>
+                </div>
+                <div class="about__text about__text__03">
+                    <div class="fade_action fade_left">
+                        <h4>동료들을 소중히 여기고,<br>유연한 업무 분위기를 이끌어 갑니다.</h3>
+                        <p>
+                            동료들을 존중하는 협업과 의사소통을 선호합니다.<br>
+                            효율적인 협업을 위해 항상 고민합니다.
+                        </p>
+                    </div>                  
+                    <lottie-player class="about__lottie fade_action fade_right"
+                    src="/assets/images/about_ani_01.json"
+                    background="transparent" speed="1" loop autoplay></lottie-player>
+                </div>
+            </div>
+            <div class="about__tag">
+                <div class="about__tag__track">
+                    <div class="about__tag__text">#InteractiveWeb&nbsp; #WebAccessibility&nbsp; #Optimization&nbsp; #Sense&nbsp; #Respect&nbsp; #Growth&nbsp; #Positive&nbsp;#Efforts&nbsp;#Communications</div>
+                </div>
+            </div>
+        </section>
+        <!-- //about -->
+
+        <section id="work" class="work">
+            <h2 class="hidden">포트폴리오 영역</h2>
+            <h3 class="gradient__ani__text fade_action fade_top">WORK.</h3>
+            <ul class="myWork__list" role="group">
+                <li class="fade_action fade_top">
+                    <div class="myWork__list__img">
+                        <img src="/assets/images/work1.jpg" alt="">
+                        <div class="myWork__list__btn">
+                            <a href="https://wondrous-lollipop-6df179.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i> SITE</a>
+                            <a href="https://github.com/lee-juyoung1160/portfolio2023_vite" target="_blank"><i class="fa-brands fa-github"></i> GIT</a>
+                        </div>
+                    </div>
+                    <div class="myWork__list__text">
+                        <h4>포트폴리오 2023</h4>
+                        <div class="info">
+                            <p>
+                                Html5, Css3, javascript, git, Gsap, Lottie
+                            </p>
+                            <p>2023.09 - 2023.09</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="fade_action fade_top">
+                    <div class="myWork__list__img">
+                        <img src="/assets/images/work3.jpg" alt="">
+                        <div class="myWork__list__btn">
+                            <a href="https://yafitcdn.yanadoo.co.kr/" target="_blank"><i class="fa-solid fa-link"></i> SITE</a>
+                            <a href="https://github.com/juliaYanadoo/YAFIT-CYCLE-WEB" target="_blank"><i class="fa-brands fa-github"></i> GIT</a>
+                        </div>
+                    </div>
+                    <div class="myWork__list__text">
+                        <h4>야핏</h4>
+                        <div class="info">
+                            <p>
+                                Html5, Css3, javascript, java
+                            </p>
+                            <p>2022.8 - 2023.6</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="fade_action fade_top">
+                    <div class="myWork__list__img">
+                        <img src="/assets/images/work8.jpg" alt="">
+                        <div class="myWork__list__btn">
+                            <a href="https://github.com/lee-juyoung1160/Youcandoo_3_0_React-" target="_blank"><i class="fa-brands fa-github"></i> GIT</a>
+                        </div>
+                    </div>
+                    <div class="myWork__list__text">
+                        <h4>유캔두3.0 React ver</h4>
+                        <div class="info">
+                            <p>
+                                React, Scss, git, Php
+                            </p>
+                            <p>2023.5 - 2023.5</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="fade_action fade_top">
+                    <div class="myWork__list__img">
+                        <img src="/assets/images/work6.jpg" alt="">
+                        <div class="myWork__list__btn">
+                            <a href="https://github.com/lee-juyoung1160/Youcandoo_3_0" target="_blank"><i class="fa-brands fa-github"></i> GIT</a>
+                        </div>
+                    </div>
+                    <div class="myWork__list__text">
+                        <h4>유캔두 CBT ~ 3.0</h4>
+                        <div class="info">
+                            <p>
+                                Html5, Css3, javascript, Php
+                            </p>
+                            <p>2023.5 - 2023.5</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="fade_action fade_top">
+                    <div class="myWork__list__img">
+                        <img src="/assets/images/work5.jpg" alt="">
+                        <div class="myWork__list__btn">
+                            <a href="https://github.com/lee-juyoung1160/Youcandoo_3_0_Admin" target="_blank"><i class="fa-brands fa-github"></i> GIT</a>
+                        </div>
+                    </div>
+                    <div class="myWork__list__text">
+                        <h4>유캔두 관리자 사이트</h4>
+                        <div class="info">
+                            <p>
+                                Html5, Css3, javascript
+                            </p>
+                            <p>2023.5 - 2023.5</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="fade_action fade_top">
+                    <div class="myWork__list__img">
+                        <img src="/assets/images/work4.jpg" alt="">
+                        <div class="myWork__list__btn">
+                            <a href="https://drprio.com/" target="_blank"><i class="fa-solid fa-link"></i> SITE</a>
+                        </div>
+                    </div>
+                    <div class="myWork__list__text">
+                        <h4>닥터프리오</h4>
+                        <div class="info">
+                            <p>
+                                Html5, Css3, Jquery, Cafe24
+                            </p>
+                            <p>2023.5 - 2023.5</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>  
+        </section>
+        <!-- //work -->
+    
+        <section id="skill" class="skill">
+            <h2 class="hidden">스킬 소개 영역</h2>
+            <h3 class="fade_action fade_top">저는 이런 것들을 <br>할 수 있습니다.</h3>
+            <div class="skill__wrap" role="group">
+                <ul class="skill__list" role="group">
+                    <li class="skill__item">
+                        <p class="skill__item__name">HTML5</p>
+                        <strong class="skill__item__percent">95<span>%</span></strong>
+                        <p class="skill__item__text">
+                            웹표준, 웹접근성을 준수하는 시멘틱 마크업과 레이아웃 구성,
+                            유지보수와 협업을 위한 코드작성과 주석처리,
+                            100% 하드코딩이 가능합니다.
+                        </p>
+                    </li>
+                    <li class="skill__item">
+                        <p class="skill__item__name">CSS3/SCSS</p>
+                        <strong class="skill__item__percent">95<span>%</span></strong>
+                        <p class="skill__item__text">
+                            미디어 쿼리를 이용한 반응형,
+                            키프레임으로 구현하는 애니메이션,
+                            전처리기(Scss), 변수 사용이 가능합니다.
+                        </p>
+                    </li>
+                    <li class="skill__item">
+                        <p class="skill__item__name">Javascript/Jquery</p>
+                        <strong class="skill__item__percent">70<span>%</span></strong>
+                        <p class="skill__item__text">
+                            바닐라 자바스크립트 동적 제어,
+                            간단한 API 호출 및 바인딩 작업이 가능합니다.
+                            제이쿼리도 사용 가능하며, 꾸준한 스터디로 역량을 키워나가고 있습니다.
+                        </p>
+                    </li>
+                    <li class="skill__item">
+                        <p class="skill__item__name">React</p>
+                        <strong class="skill__item__percent">20<span>%</span></strong>
+                        <p class="skill__item__text">
+                            리액트 환경 셋팅, 환경 내 퍼블리싱이 가능합니다.
+                            꾸준한 스터디로 역량을 키워나가고 있습니다.
+                        </p>
+                    </li>
+                    <li class="skill__item">
+                        <p class="skill__item__name">Vite</p>
+                        <strong class="skill__item__percent">20<span>%</span></strong>
+                        <p class="skill__item__text">
+                            비트 환경 셋팅, 환경 내 퍼블리싱이 가능합니다.
+                            꾸준한 스터디로 역량을 키워나가고 있습니다.
+                        </p>
+                    </li>
+                    <li class="skill__item">
+                        <p class="skill__item__name">Git/Svn</p>
+                        <strong class="skill__item__percent">70<span>%</span></strong>
+                        <p class="skill__item__text">
+                            깃 셋팅 및 사용, 터미널 명령어와 소스트리 사용이 가능합니다.
+                            실무 협업 시 브랜치와 배포까지 경험해보았습니다.
+                        </p>
+                    </li>
+                    <li class="skill__item">
+                        <p class="skill__item__name">PhotoShop/XD</p>
+                        <strong class="skill__item__percent">80<span>%</span></strong>
+                        <p class="skill__item__text">
+                            어도비 프로그램을 이용한 간단한 디자인 작업을 할 수 있으며,
+                            XD를 활용한 디자이너와의 협업도 가능합니다.
+                        </p>
+                    </li>
+                    <li class="skill__item">
+                        <p class="skill__item__name">Figma</p>
+                        <strong class="skill__item__percent">50<span>%</span></strong>
+                        <p class="skill__item__text">
+                            피그마를 이용한 간단한 작업을 할 수 있으며,
+                            실무에서 디자인/기획과 협업 시 피그마를 주로 사용하였습니다.
+                        </p>
+                    </li>
+                    <li class="skill__item">
+                        <p class="skill__item__name">Jira/Confluence</p>
+                        <strong class="skill__item__percent">80<span>%</span></strong>
+                        <p class="skill__item__text">
+                            실무에서 지라로 일정등의 업무관리를 경험해보았으며,
+                            컨플루언스 문서 정리도 가능합니다.
+                        </p>
+                    </li>
+                </ul>        
+            </div>
+        </section> 
+        <!-- //skill -->
+
+    </main>
+    <!-- //main -->
+
+    <footer>
+        <h2 class="hidden">하단 영역</h2>
+        <div class="footer__text">
+            <span>Do You Like This Portfolio ?</span>
+            <h3>CONTACT</h3>
+            
+            
+        </div>
+        <div class="footer__sns">
+            <ul>
+                <li><a href="https://github.com/lee-juyoung1160"><i class="fa-brands fa-github"></i> GIT</a></li>
+                <li><a href="https://velog.io/@noocgs"><i class="fa-brands fa-blogger"></i> Velog</a></li>
+                <li><a href="mailto:noocgs@gmail.com"><i class="fa-solid fa-envelope"></i> noocgs@gmail.com</a></li>
+            </ul>
+            <p class="copy">© 2023 Lee-ju-Young. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+    <!-- cursor custom -->
+    <div id="cursor" role="group" aria-labelledby="cursor" aria-expanded="false" tabindex="0">
+        <div class="cursor__circle"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.0/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

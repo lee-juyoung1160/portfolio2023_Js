@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* setting */
+@import url(setting/font.css);
+@import url(setting/vars.css);
+@import url(setting/reset.css);
+
+/* mouse cursor style */
+@import url(cursor.css);
+
+/* common - header, footer */
+@import url(common.css);
+
+

@@ -1,0 +1,53 @@
+/* common */
+html, body {overflow-x: hidden;}
+body.scroll__hidden {overflow: hidden;}
+.hidden {position: absolute;width: 1px;height: 1px;margin: -1px;overflow: hidden;clip-path: polygon(0 0, 0 0, 0 0);}
+
+/* header */
+header {display: flex; justify-content: space-between; position: fixed; left: 0; top: 0; width: 100%; padding: 30px 60px; font-size: 16px; box-sizing: border-box; z-index: 100; transition: .3s; mix-blend-mode: difference;}
+header.active {transform: translateY(-100%);}
+header .menu__open {display: none;}
+.header__nav ul {display: flex; justify-content: space-between;}
+.header__nav ul li {margin-left: 7rem;}
+.header__nav__mo {display: none;}
+
+/* footer */
+footer {display: flex; justify-content: space-between; padding: 100px; background-color: #000; box-sizing: border-box;}
+footer .footer__text h3 {font-size: 10rem; font-weight: 800; line-height: .8;}
+footer .footer__text span {display: block; margin: 20px 10px; font-size: 2rem; font-weight: 100;}
+footer .footer__sns ul li {font-size: 1.7rem; padding: 2px 0;}
+footer .footer__sns .copy {margin-top: 30px; font-size: 1.2rem; opacity: .7;}
+
+
+/*  820 ~ 501 */
+@media screen and (max-width: 820px) {
+
+    header {padding: 3% 5%; mix-blend-mode: normal;}
+    /* 모바일 버전 토글 메뉴 버튼 */
+    .header__nav__mo {display: block; width: 32px; height: 32px; z-index: 1001; transition: top .5s; }
+    .header__nav__mo span {display: block; position: relative; width: 100%; height: 1px; background-color:var(--white); transition: .3s;}
+    .header__nav__mo span:before, 
+    .header__nav__mo span:after {content: ''; position: absolute; left: 0; width: 100%; height: 1px; background-color:var(--white); transition: .3s;}
+    .header__nav__mo span:before {top:8px;}
+    .header__nav__mo span:after {bottom:8px;}
+   
+   .header__nav {overflow: hidden; position: fixed; left: 0; width: 0%; height: 0%; color:var(--black); background-color:var(--white); z-index: 1000; transition: top .5s;}
+   .header__nav ul {display: block; width: 80%; margin: 10% auto;}
+   .header__nav ul li {margin-left: 0; font-size: 16vw; line-height: 1.2; letter-spacing: -1px;}
+   .header__nav ul li .char {overflow: inherit; color:var(--black); }
+   .header__nav ul li .char:before, .gnb ul li .char:after {display: none;}
+   .header__nav.active {top:0; width: 100%; height: 100vh;}
+   
+   header .header__nav__mo.active span {background-color:transparent; z-index: 1001;}
+   header .header__nav__mo.active span:before {transform: rotate(45deg) translate(5px, 5px); top:-4px; background-color:var(--black);}
+   header .header__nav__mo.active span:after {transform: rotate(-45deg) translate(2px, -1px); bottom: -4px; background-color:var(--black);}
+
+   footer {display: block; padding: 6.10vw;}
+   footer .footer__text h3 {margin-bottom: 6.10vw; font-size: 15vw;}
+   footer .footer__text span {font-size: 2.8vw;}
+   footer .footer__sns ul {display: flex;}
+   footer .footer__sns ul li {padding-right: 6.10vw; font-size: 3.7vw;}
+   footer .footer__sns .copy {margin-top: 12.20vw; font-size: 2.3vw;}
+}
+
+
